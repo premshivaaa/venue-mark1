@@ -6,7 +6,7 @@ import os
 # Configure Gemini with error handling
 try:
     configure(api_key=os.environ.get("GEMINI_API_KEY"))
-    gemini = GenerativeModel('gemini-pro')
+    gemini = GenerativeModel('gemini-2.0-flash')
 except Exception as e:
     print(f"Gemini initialization error: {str(e)}")
 
